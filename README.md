@@ -1,6 +1,6 @@
 # project-1
 todo-app
-rest+mongodb+flask for a Todo app
+mongodb+flask for a Todo app
 <ul>
 <li><h4>Start the mongodb server</h4></li>
 <li><h4>Check for various operations of CRUD operations<h4></li>
