@@ -1,0 +1,22 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+<style>
+    body{
+    background-color:#96C7C1;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h1 class="heading" style="text-align:center">Edit task {{todo_id}}</h1>
+    <div class="container" style="textalign:center">
+        {{ form.csrf_token() }}
+        {{ wtf.quick_form(form,novalidate=True) }}
+    </div>
+</div>
+{% endblock %}
